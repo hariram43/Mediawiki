@@ -16,8 +16,8 @@ stages{
             steps {
                 echo "Building images ... "
 
-                sh 'docker build -t mediawiki -f ./docker/mediawiki/ .'
-                sh 'docker build -t wikidb -f ./docker/database/ .'
+                sh 'docker build -t mediawiki -f ./docker/mediawiki/Dockerfile .'
+                sh 'docker build -t wikidb -f ./docker/database/Dockerfile .'
 
             }
         }
