@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wikidb-service
+spec:
+  type: ClusterIP
+  selector:
+    app: wikidb
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306
+      
