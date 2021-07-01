@@ -3,7 +3,7 @@ pipeline {
     
     parameters { 
          string(name: 'region', defaultValue: 'us-east-1', description: 'AWS Region')
-         string(name: 'repo', defaultValue: '637373963597.dkr.ecr.us-east-1.amazonaws.com', description: 'ECR URI')
+         string(name: 'repo', defaultValue: '637373963597.dkr.ecr.us-east-1.amazonaws.com', description: 'ECR url')
 
     } 
 
