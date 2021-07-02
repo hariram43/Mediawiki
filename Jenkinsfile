@@ -36,10 +36,10 @@ stages{
 
                 stage ("Deploy to Dev"){
                     steps {
-                        sh "kubectl apply -n dev -f ./k8s/mediawiki/deployment.yaml"    // Optinally we can give url of yaml file to apply
-                        sh "kubectl apply -n dev -f ./k8s/mediawiki/service.yaml"
-                        sh "kubectl apply -n dev -f ./k8s/wikidb/deployment.yaml"
-                        sh "kubectl apply -n dev -f ./k8s/wikidb/service.yaml"                        
+                        sh "./kubectl apply -n dev -f ./k8s/mediawiki/deployment.yaml"    // Optinally we can give url of yaml file to apply
+                        sh "./kubectl apply -n dev -f ./k8s/mediawiki/service.yaml"
+                        sh "./kubectl apply -n dev -f ./k8s/wikidb/deployment.yaml"
+                        sh "./kubectl apply -n dev -f ./k8s/wikidb/service.yaml"                        
                     }
                  }
 
