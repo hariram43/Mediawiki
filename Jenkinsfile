@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters { 
-         string(name: 'region', defaultValue: 'us-east-1', description: 'AWS Region')
+         string(name: 'region', defaultValue: 'us-west-2', description: 'AWS Region')
          string(name: 'repo', defaultValue: '637373963597.dkr.ecr.us-west-2.amazonaws.com', description: 'ECR URL')
 
     } 
